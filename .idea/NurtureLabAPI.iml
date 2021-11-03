@@ -8,6 +8,7 @@
     <orderEntry type="module" module-name="withoutrestCRUD" />
     <orderEntry type="module" module-name="crudSingleURl" />
     <orderEntry type="module" module-name="studentAPI" />
+    <orderEntry type="module" module-name="jobportal" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />

@@ -11,8 +11,10 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+STATIC_ROOT  = os.path.join(BASE_DIR, 'static')
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
@@ -25,7 +27,7 @@ SECRET_KEY = 'wqo&5mdp2ap0j1oy801*p3mz-2ui2i+iy30@#sq13p#)q8+2z$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["nurturelabapi.herokuapp.com"]
 
 
 # Application definition
@@ -131,6 +133,8 @@ LOGOUT_REDIRECT_URL = '/logout'
 
 
 STATIC_URL = '/static/'
+
+# STATIC_ROOT = BASE_DIR / 'static'
 
 # ----------------------------------------------------------------
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
