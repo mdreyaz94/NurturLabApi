@@ -51,4 +51,5 @@ tzdata==2021.5
 tzlocal==3.0
 urllib3==1.26.4
 waitress==2.0.0
+whitenoise==5.3.0
 wrapt==1.12.1
