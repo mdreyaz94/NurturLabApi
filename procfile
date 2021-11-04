@@ -1,1 +1,2 @@
 web:gunicorn NurtureLabAPI.wsgi
+"start":"gunicorn PHYSICS_COMMUNITY.wsgi"

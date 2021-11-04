@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e2d0bba-f40e-4d05-b830-24902a6d7c10" name="Default Changelist" comment="" />
+    <list default="true" id="3e2d0bba-f40e-4d05-b830-24902a6d7c10" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/procfile" beforeDir="false" afterPath="$PROJECT_DIR$/procfile" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,16 +12,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/procfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
+            <state relative-caret-position="21">
+              <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/NurtureLabAPI/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
@@ -379,13 +381,6 @@
     <entry file="file://$PROJECT_DIR$/../Django/jobportal/jobportal/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" lean-forward="true" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/NurtureLabAPI/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -393,6 +388,13 @@
           <folding>
             <element signature="e#314#338#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
         </state>
       </provider>
     </entry>
