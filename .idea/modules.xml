@@ -5,7 +5,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/NurtureLabAPI.iml" filepath="$PROJECT_DIR$/.idea/NurtureLabAPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/../crudSingleURl/.idea/crudSingleURl.iml" filepath="$PROJECT_DIR$/../crudSingleURl/.idea/crudSingleURl.iml" />
       <module fileurl="file://$PROJECT_DIR$/../crudapiserialize/.idea/crudapiserialize.iml" filepath="$PROJECT_DIR$/../crudapiserialize/.idea/crudapiserialize.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Django/jobportal/.idea/jobportal.iml" filepath="$PROJECT_DIR$/../Django/jobportal/.idea/jobportal.iml" />
       <module fileurl="file://$PROJECT_DIR$/../studentAPI/.idea/studentAPI.iml" filepath="$PROJECT_DIR$/../studentAPI/.idea/studentAPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/../withoutrestCRUD/.idea/withoutrestCRUD.iml" filepath="$PROJECT_DIR$/../withoutrestCRUD/.idea/withoutrestCRUD.iml" />
     </modules>
