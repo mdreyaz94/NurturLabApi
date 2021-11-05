@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'whitenoise.runserver_nostatic',
+    # 'whitenoise.runserver_nostatic',
     'allauth', # new
     'allauth.account', # new
     'allauth.socialaccount', # new
