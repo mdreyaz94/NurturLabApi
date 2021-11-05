@@ -28,8 +28,8 @@ SECRET_KEY = 'wqo&5mdp2ap0j1oy801*p3mz-2ui2i+iy30@#sq13p#)q8+2z$'
 # DEBUG = True
 DEBUG = False
 
-# ALLOWED_HOSTS = ["nurturapi.herokuapp.com"]
-ALLOWED_HOSTS = ['127.0.0.1', "nurturapi.herokuapp.com"]
+ALLOWED_HOSTS = ["nurturapi.herokuapp.com"]
+# ALLOWED_HOSTS = ['127.0.0.1', "nurturapi.herokuapp.com"]
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    # 'whitenoise.runserver_nostatic',
+    'whitenoise.runserver_nostatic',
     'allauth', # new
     'allauth.account', # new
     'allauth.socialaccount', # new
@@ -52,13 +52,14 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.whiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # 'whitenoise.middleware.whiteNoiseMiddleware',
+
 
 ]
 
