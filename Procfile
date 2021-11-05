@@ -1,1 +1,1 @@
-gunicorn NurtureLabAPI.wsgi:application --log-file - --log-level debug
+gunicorn NurtureLabAPI.wsgi:application --log-file -
