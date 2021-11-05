@@ -25,10 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'wqo&5mdp2ap0j1oy801*p3mz-2ui2i+iy30@#sq13p#)q8+2z$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = ["nurturapi.herokuapp.com"]
-
+# DEBUG = True
+DEBUG = False  #1
+# ALLOWED_HOSTS = ["nurturapi.herokuapp.com"]
+ALLOWED_HOSTS = ['127.0.0.1', '.herokuapp.com'] #2
 
 # Application definition
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'whitenoise.runserver_nostatic',
     'allauth', # new
     'allauth.account', # new
     'allauth.socialaccount', # new
@@ -58,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.whiteNoiseMiddleware',
+
 ]
 
 ROOT_URLCONF = 'NurtureLabAPI.urls'
@@ -83,6 +85,7 @@ WSGI_APPLICATION = 'NurtureLabAPI.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+import dj_database_url   #3
 
 DATABASES = {
     'default': {
@@ -91,7 +94,11 @@ DATABASES = {
     }
 }
 
+db_from_env = dj_database_url.config(conn_max_age=500) #4
+DATABASES['default'].update(db_from_env)
 
+WHITENOISE_USE_FINDERS = True #5
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
