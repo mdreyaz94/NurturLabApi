@@ -1,1 +1,1 @@
-web:waitress-server --port-$PORT NurtureLabAPI.wsgi:application
+web:waitress-serve --port-$PORT NurtureLabAPI.wsgi:application
