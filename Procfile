@@ -1,1 +1,1 @@
-gunicorn NurtureLabAPI.wsgi:application --log-file
+web:waitress-server --port-$PORT NurtureLabAPI.wsgi:application
